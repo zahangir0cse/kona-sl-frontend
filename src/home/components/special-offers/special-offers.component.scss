@@ -1,0 +1,61 @@
+.offers-box {
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px;
+  &-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+  }
+  &-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+  }
+  &:hover .offers-box-overlay {
+    height: 100%;
+  }
+}
+
+.offer-box-info {
+  color: #333;
+  font-size: 16px;
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  //   left: 50%;
+  //   -webkit-transform: translate(-10%, -50%);
+  //   -ms-transform: translate(-10%, -50%);
+  //   transform: translate(-10%, -50%);
+  text-align: center;
+  &-head {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  &-lines {
+    padding: 2px 0;
+  }
+  &-btn {
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    border: 1px solid;
+    border-color: #51cba3;
+    background-color: #51cba3;
+    color: #ffffff !important;
+    &:hover {
+      border-color: #5153cb;
+      background-color: #5153cb;
+    }
+  }
+}

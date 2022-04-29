@@ -1,0 +1,57 @@
+.services {
+  background-image: url(/assets/images/services/service.jpg);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  &-card {
+    box-shadow: 0 0 20px #dbdbdb;
+    margin: 15px !important;
+    &-link {
+      cursor: pointer;
+      transition: 0.4s all ease;
+      min-height: 226px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 20px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & h3 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.2;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        letter-spacing: 0em;
+        text-align: inherit;
+        color: #14131a;
+      }
+      & p {
+        font-weight: 400;
+        color: #337ab7;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: Roboto, sans-serif;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .services {
+    &-card {
+      &-link {
+        & h3 {
+          font-size: 22px;
+        }
+        & p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

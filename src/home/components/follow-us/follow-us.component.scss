@@ -1,0 +1,19 @@
+.follow {
+  background-image: url(/assets/images/followus.jpg);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 100%;
+  text-align: center;
+  padding-bottom: 80px;
+}
+@media only screen and (max-width: 767px) {
+  .follow {
+    background-position: top;
+    background-size: auto;
+  }
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}

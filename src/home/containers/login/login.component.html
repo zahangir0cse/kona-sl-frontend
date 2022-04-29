@@ -1,0 +1,32 @@
+<div class="login">
+  <div class="login-container">
+    <div class="login-container-block">
+      <div class="login-container-logo" style="color: lightgoldenrodyellow;"><h3>Kona-SL</h3></div>
+      <div class="login-toggle">
+        <a routerLink="/register">Signup</a>
+        <a class="active">Login</a>
+      </div>
+      <div class="login-form">
+        <div class="alert alert-danger" role="alert" *ngIf="errorMessage.length > 0">
+          {{ errorMessage }}
+        </div>
+        <!-- {{ form.value | json }} -->
+        <form [formGroup]="form" (ngSubmit)="submit()">
+          <div class="fieldset">
+            <input placeholder="Phone number" type="text" formControlName="username" />
+            <small class="text-danger" *ngIf=" form.controls.username.errors && form.controls.username.touched ">
+              <div [hidden]="!form.controls['username'].errors.required"> username required </div>
+            </small>
+          </div>
+          <div class="fieldset">
+            <input placeholder="Password" type="password" formControlName="password" />
+          </div>
+          <button class="login-form-submit-button success" type="submit">
+            Login
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
